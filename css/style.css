@@ -116,9 +116,10 @@ header .jumbotron p {
 
 
 .illustration {
-  width: 100%;
+  width: 1400px;
   height: 1000px;
   background-color: #F4F9FD;
+  margin: 0 auto;
 }
 
 .powerful {
