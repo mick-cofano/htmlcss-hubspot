@@ -8,24 +8,17 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
-.container {
+.new-container {
   width: 1200px;
   margin: 0 auto;
-}
-
-.w100 {
-  min-width: 1200px;
 }
 
 .fl {
   float: left;
 }
-
 .fr {
   float: right;
 }
-
 .clearfix::after {
   content: "";
   clear: both;
@@ -40,12 +33,10 @@ body {
   line-height: 40px;
   min-width: 70px;
 }
-
 .button-style-a {
   border: 2px solid #FD9A86;
   color: #FD9A86;
 }
-
 .button-style-b {
   background: #FE775A;
   color: white;
@@ -54,47 +45,48 @@ body {
 }
 /* ----- END COMMON SETTINGS ----- */
 
-
 /* ----- HEADER CUSTOM SETTINGS ----- */
-header {
-  width: 1400px;
-  height: 900px;
-  background-color: #FFF1EE;
-  background-image: url("../img/jumbotron.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  margin: 0 auto;
-}
-
+/* -- PRIMA NAVBAR -- */
 .header-top {
   background-color: #F4F9FD;
   height: 100px;
   line-height: 60px;
 }
-
 .header-top ul {
   height: 100px;
   line-height: 100px;
 }
-
 .header-top li {
   display: inline-block;
   padding: 0 20px;
   height: 18px;
+  line-height: 18px;
   font-size: 18px;
 }
-
 .english {
   border-right: 2px solid black;
-  height: 20%;
 }
-
 .search-icon {
   position: relative;
   top: 13px;
 }
-
+/* -- FINE PRIMA NAVBAR -- */
+/* -- SECONDA NAVBAR --*/
+.header-second-nav {
+  height: 100px;
+  line-height: 60px;
+}
+.header-second-nav ul {
+  height: 100px;
+  line-height: 100px;
+}
+.header-second-nav li {
+  display: inline-block;
+  padding: 0 20px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 18px;
+}
 .logo-hubspot {
   margin-top: 35px;
   width: 100%;
@@ -102,34 +94,49 @@ header {
   background-repeat: no-repeat;
   position: absolute;
 }
+/* -- FINE SECONDA NAVBAR --*/
 
 /* ----- JUMBOTRON SETTINGS ----- */
-header .jumbotron {
-  width: 50%;
-  margin-top: 120px;
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 695px;
+  background-color: #FEF6EF;
+  background-image: url("../img/jumbotron.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
-
-header .jumbotron h1 {
+.jumbotron::before {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 3px solid #33475b;
+  border-bottom: 3px solid #33475b;
+  content: "";
+  background-color: #AFEBE4;
+}
+.jumbotron h1 {
   font-size: 50px;
 }
-
-header .jumbotron .button {
+.jumbotron .button {
   height: 60px;
   line-height: 60px;
   width: 200px;
 }
 
-header .jumbotron p {
+.jumbotron p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 /* ----- END JUMBOTRON SETTINGS ----- */
 /* ----- END HEADER CUSTOM SETTINGS ----- */
 
-
-.illustration {
-  width: 1400px;
-  height: 2000px;
+.main-boxes {
+  width: 100%;
+  height: 1500px;
+  min-width: 1200px;
   background-color: #F4F9FD;
   margin: 0 auto;
 }
@@ -157,16 +164,20 @@ header .jumbotron p {
 
 }
 .box-1 {
-  width: 200px;
+  width: 19%;
+  height: 400px;
   text-align: center;
   margin-left: 100px;
   padding-top: 100px;
+  border: 1px solid black;
 }
 .box-2 {
-  width: 1000px;
+  width: 77%;
+  height: 400px;
   text-align: left;
   padding-top: 60px;
   padding-left: 100px;
+  border: 1px solid black;
 }
 
 .box-2 h2 {
@@ -207,11 +218,6 @@ header .jumbotron p {
 /* box verticale */
 
 /* ---- CONTAINER GRADIENT CON BOX ----- */
-.new-container {
-  width: 1200px;
-  color: white;
-  margin: 0 auto;
-}
 
 .container-blue {
   width: 100%;
@@ -219,6 +225,7 @@ header .jumbotron p {
   min-width: 1200px;
   text-align: center;
   background: linear-gradient(45deg,#00a4bd,#00bda5);
+  color: white;
 }
 
 .new-container h2 {
@@ -235,7 +242,6 @@ header .jumbotron p {
 .box {
   width: 25%;
   height: 200px;
-  color: white;
 }
 
 .box:first-child, .box:nth-child(2), .box:nth-child(3) {
@@ -290,6 +296,7 @@ footer {
   height: 600px;
   min-width: 1200px;
   background-color: #32495B;
+  color: white;
 }
 .languages {
   margin-top: 100px;
