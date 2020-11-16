@@ -14,6 +14,10 @@ body {
   margin: 0 auto;
 }
 
+.w100 {
+  min-width: 1200px;
+}
+
 .fl {
   float: left;
 }
@@ -63,14 +67,22 @@ header {
   margin: 0 auto;
 }
 
-.header-nav ul {
+.header-top {
+  background-color: #F4F9FD;
+  height: 100px;
+  line-height: 60px;
+}
+
+.header-top ul {
   height: 100px;
   line-height: 100px;
 }
 
-.header-nav li {
+.header-top li {
   display: inline-block;
   padding: 0 20px;
+  height: 18px;
+  font-size: 18px;
 }
 
 .english {
