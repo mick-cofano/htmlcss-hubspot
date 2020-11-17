@@ -43,6 +43,13 @@ body {
   padding: 0 10px;
   border: 2px solid #FE775A;
 }
+.button-style-c {
+  background: #DADEE0;
+  color: #3D5364;
+  margin: 10px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 /* ----- END COMMON SETTINGS ----- */
 
 /* ----- HEADER CUSTOM SETTINGS ----- */
@@ -117,25 +124,29 @@ body {
   content: "";
   background-color: #AFEBE4;
 }
-.jumbotron h1 {
+.jumbotron-text {
+  width: 50%;
+}
+.jumbotron-text h1 {
+  padding-top: 50px;
   font-size: 50px;
 }
-.jumbotron .button {
+.jumbotron-text .button {
   height: 60px;
   line-height: 60px;
   width: 200px;
 }
+.jumbotron-text p {
 
-.jumbotron p {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 /* ----- END JUMBOTRON SETTINGS ----- */
 /* ----- END HEADER CUSTOM SETTINGS ----- */
 
 .main-boxes {
   width: 100%;
-  height: 1500px;
+  height: 1600px;
   min-width: 1200px;
   background-color: #F4F9FD;
   margin: 0 auto;
@@ -144,6 +155,7 @@ body {
 .powerful {
   text-align: center;
   padding-top: 25px;
+  margin-bottom: 60px;
 }
 
 .powerful h1 {
@@ -157,27 +169,36 @@ body {
 }
 /* ----- BOX ORIZZONTALE ----- */
 
-/*.box {
-  height: 400px;
+.white-boxes {
   background-color: white;
-  margin-top: 50px;*/
-
+  margin-top: 60px;
+  width: 1200px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px grey;
+}
+.white-boxes h2 {
+  font-size: 40px;
+  padding-top: 50px;
+}
+.white-boxes p {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30PX;
 }
 .box-1 {
-  width: 19%;
+  width: 20%;
   height: 400px;
   text-align: center;
-  margin-left: 100px;
   padding-top: 100px;
-  border: 1px solid black;
+  background-color: white;
 }
 .box-2 {
-  width: 77%;
+  width: 80%;
   height: 400px;
   text-align: left;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-left: 100px;
-  border: 1px solid black;
+  background-color: white;
 }
 
 .box-2 h2 {
@@ -192,16 +213,18 @@ body {
 
 /* box verticale */
 .column-1 {
-  margin-top: 50px;
-  width: 400px;
+  margin-top: 60px;
+  width: 30%;
   height: 600px;
   text-align: center;
   background-color: white;
 }
 
 .column-2 {
-  margin-top: 50px;
-  width: 400px;
+  margin-top: 60px;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 30%;
   height: 600px;
   padding: 0 15px;
   text-align: center;
@@ -209,8 +232,8 @@ body {
 }
 
 .column-3 {
-  margin-top: 50px;
-  width: 400px;
+  margin-top: 60px;
+  width: 30%;
   height: 600px;
   text-align: center;
   background-color: white;
@@ -218,23 +241,23 @@ body {
 /* box verticale */
 
 /* ---- CONTAINER GRADIENT CON BOX ----- */
-
 .container-blue {
   width: 100%;
-  height: 600px;
+  height: 700px;
   min-width: 1200px;
   text-align: center;
   background: linear-gradient(45deg,#00a4bd,#00bda5);
   color: white;
 }
-
-.new-container h2 {
+.container-blue h2 {
   font-size: 40px;
+  padding-top: 50px;
 }
-.new-container p {
-  font-size: 25px;
+.container-blue p {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30PX;
 }
-
 .row {
   width: 100%;
 }
@@ -243,7 +266,6 @@ body {
   width: 25%;
   height: 200px;
 }
-
 .box:first-child, .box:nth-child(2), .box:nth-child(3) {
   border-right: 1px solid white;
 }
@@ -253,7 +275,6 @@ body {
 .box:nth-child(5), .box:nth-child(6), .box:nth-child(7) {
   border-right: 1px solid white;
 }
-
 .box h3 {
   font-size: 50px;
   padding: 10px;
@@ -263,34 +284,58 @@ body {
 }
 /* ---- CONTAINER GRADIENT CON BOX ----- */
 
+/* --- CONTAINER BRANDS --- */
 .container-brands {
   width: 100%;
   height: 300px;
   min-width: 1200px;
 }
-
 .text-left {
   width: 25%;
   text-align: center;
   color: black;
 }
+.brands {
+  margin-top: 50px;
+}
+.container-brands h2 {
+  font-size: 40px;
+  padding-top: 50px;
+}
+.container-brands p {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30PX;
+}
+/* --- CONTAINER BRANDS --- */
 
+/* --- CONTAINER WOMAN --- */
 .container-woman {
   width: 100%;
   height: 500px;
   min-width: 1200px;
+  text-align: left;
 }
 .text-container-woman {
   width: 40%;
-  text-align: left;
   color: black;
 }
-
 .image-woman img {
   height: 400px;
   width: 400px;
 }
+.container-woman h2 {
+  font-size: 40px;
+  padding-top: 50px;
+}
+.container-woman p {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 30PX;
+}
+/* --- CONTAINER WOMAN --- */
 
+/* ----- FOOTER ----- */
 footer {
   width: 100%;
   height: 600px;
@@ -298,13 +343,30 @@ footer {
   background-color: #32495B;
   color: white;
 }
+
+.box-footer {
+  width: 25%;
+  height: 200px;
+}
+.box-footer h3 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.box-footer ul {
+  text-align: left;
+  overflow: hidden;
+}
+.box-footer ul li {
+  padding-top: 20px;
+}
+
 .languages {
-  margin-top: 100px;
+  margin-top: 270px;
   width: 100%;
   border-bottom: 1px solid grey;
   text-align: center;
 }
-
 .languages ul {
   text-align: center;
   overflow: hidden;
@@ -317,3 +379,10 @@ footer {
   display:inline-block;
   text-decoration: none;
 }
+
+.fa {
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+/* ----- FOOTER ----- */
