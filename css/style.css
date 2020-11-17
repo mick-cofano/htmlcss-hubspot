@@ -94,6 +94,9 @@ body {
   line-height: 18px;
   font-size: 18px;
 }
+.fa-angle-down {
+  margin-left: 10px;
+}
 .logo-hubspot {
   margin-top: 35px;
   width: 100%;
@@ -137,13 +140,13 @@ body {
   width: 200px;
 }
 .jumbotron-text p {
-
   margin-top: 40px;
   margin-bottom: 40px;
 }
 /* ----- END JUMBOTRON SETTINGS ----- */
 /* ----- END HEADER CUSTOM SETTINGS ----- */
 
+/* ---- MAIN BOXES SETTINGS ---- */
 .main-boxes {
   width: 100%;
   height: 1600px;
@@ -151,24 +154,20 @@ body {
   background-color: #F4F9FD;
   margin: 0 auto;
 }
-
 .powerful {
   text-align: center;
   padding-top: 25px;
   margin-bottom: 60px;
 }
-
 .powerful h1 {
   font-size: 40px;
 }
-
 .powerful p {
   padding-top: 30px;
   padding-left: 180px;
   padding-right: 180px;
 }
 /* ----- BOX ORIZZONTALE ----- */
-
 .white-boxes {
   background-color: white;
   margin-top: 60px;
@@ -185,6 +184,14 @@ body {
   padding-top: 30px;
   padding-bottom: 30PX;
 }
+.white-boxes h3 {
+  padding-bottom: 20px;
+}
+.check-align {
+  text-align: left;
+  padding-bottom: 15px;
+  vertical-align: baseline;
+}
 .box-1 {
   width: 20%;
   height: 400px;
@@ -200,45 +207,55 @@ body {
   padding-left: 100px;
   background-color: white;
 }
-
 .box-2 h2 {
   padding-top: 50px;
 }
-
 .box-2 *{
   padding-top: 15px;
   padding-bottom: 10px;
 }
+.fa-check-circle {
+  color: #FF7654;
+}
 /* ----- BOX ORIZZONTALE ----- */
-
-/* box verticale */
+/* ----- BOX VERTICALI ----- */
 .column-1 {
   margin-top: 60px;
   width: 30%;
   height: 600px;
   text-align: center;
-  background-color: white;
+  padding: 20px;
 }
-
 .column-2 {
   margin-top: 60px;
   margin-left: 60px;
   margin-right: 60px;
   width: 30%;
   height: 600px;
-  padding: 0 15px;
+  padding: 20px;
   text-align: center;
-  background-color: white;
 }
-
 .column-3 {
   margin-top: 60px;
   width: 30%;
   height: 600px;
   text-align: center;
-  background-color: white;
+  padding: 20px;
 }
-/* box verticale */
+.column-1 p {
+  margin-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+.column-2 p {
+  margin-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+.column-3 p {
+  margin-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+/* ----- END BOX VERTICALI ----- */
+/* ---- MAIN BOXES SETTINGS ---- */
 
 /* ---- CONTAINER GRADIENT CON BOX ----- */
 .container-blue {
@@ -261,7 +278,6 @@ body {
 .row {
   width: 100%;
 }
-
 .box {
   width: 25%;
   height: 200px;
@@ -338,7 +354,7 @@ body {
 /* ----- FOOTER ----- */
 footer {
   width: 100%;
-  height: 600px;
+  height: 700px;
   min-width: 1200px;
   background-color: #32495B;
   color: white;
@@ -370,6 +386,7 @@ footer {
 .languages ul {
   text-align: center;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 .languages ul li {
   display:inline;
@@ -385,4 +402,22 @@ footer {
   margin-right: 25px;
 }
 
+.bottom-footer {
+  height: 300px;
+}
+.bottom-footer img {
+  padding-top: 40px;
+}
+
+.legal-stuff ul {
+  overflow: hidden;
+  padding-top: 50px;
+}
+.legal-stuff ul li {
+  display:inline;
+  padding-left: 50px;
+}
+.legal-stuff li a {
+  display:inline-block;
+  text-decoration: none;
 /* ----- FOOTER ----- */
